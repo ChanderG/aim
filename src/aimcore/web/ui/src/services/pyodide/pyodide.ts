@@ -219,6 +219,7 @@ export async function loadPyodideInstance() {
     isLoading: true,
     registeredPackages: [],
     boards: null,
+    packages: null,
   });
   // @ts-ignore
   const pyodide = await window.loadPyodide({
@@ -410,9 +411,18 @@ export async function loadPyodideInstance() {
   });
 
   let boards: Record<string, string[]> = {};
+  let packages: Record<string, Record<string, any>> = {};
 
   for (let pkg in availablePackages) {
     boards[pkg] = availablePackages[pkg].boards;
+    if (!availablePackages[pkg].hide_boards) {
+      packages[pkg] = _.omit(availablePackages[pkg], [
+        'containers',
+        'sequences',
+        'actions',
+        'boards',
+      ]);
+    }
   }
 
   pyodideEngine.setPyodide({
@@ -421,6 +431,7 @@ export async function loadPyodideInstance() {
     isLoading: false,
     registeredPackages: Object.keys(availablePackages),
     boards,
+    packages,
   });
 }
 

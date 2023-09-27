@@ -117,12 +117,12 @@ export type PackagesListType = Record<
   {
     /**
      * The sequences list of package
-     * i.e. ['asp.Metric', 'asp.Distribution', 'asp.Image', 'asp.Figure', 'asp.Audio', 'asp.Figure3D']
+     * i.e. ['base.Metric', 'base.Distribution', 'base.Image', 'base.Figure', 'base.Audio', 'base.Figure3D']
      */
     sequences: string[];
     /**
      * The containers list of package
-     * i.e. ['asp.Run']
+     * i.e. ['base.Run']
      */
     containers: string[];
     /**
@@ -135,6 +135,11 @@ export type PackagesListType = Record<
      * i.e. TODO: add example
      */
     boards: string[];
+    /**
+     * Whether to display app card in apps page or not
+     * i.e. TODO: add example
+     */
+    hide_boards: boolean;
   }
 >;
 
@@ -145,7 +150,7 @@ export type PackagesListType = Record<
 export type GetProjectsInfoQueryOptions = {
   /**
    * Sequence: array of sequence types
-   * i.e. ['asp.Metric', 'asp.TextSequence', 'asp.ImageSequence', 'asp.AudioSequence' etc.]
+   * i.e. ['base.Metric', 'base.TextSequence', 'base.ImageSequence', 'base.AudioSequence' etc.]
    */
   sequence: SequenceTypeUnion[];
   /**

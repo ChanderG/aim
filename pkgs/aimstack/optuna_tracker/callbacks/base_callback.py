@@ -97,7 +97,7 @@ class BaseCallback:
         for key, value in attributes.items():
             self._run.set(('hparams', key), value, strict=False)
 
-        self._run.set('study_name', study.study_name)
+        self._run.set('study_name', study.study_name, strict=False)
 
         if self._as_multirun:
             for key, value in trial.params.items():
@@ -139,6 +139,7 @@ class BaseCallback:
     def close(self) -> None:
         if self._run:
             self._run.close()
+            del self._run
             self._run = None
             self._run_hash = None
 
