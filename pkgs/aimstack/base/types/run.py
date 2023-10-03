@@ -1,5 +1,4 @@
 import datetime
-import pytz
 import json
 import inspect
 import logging
@@ -80,13 +79,13 @@ class Run(Container, Caller):
 
     @property
     def created_at(self) -> datetime.datetime:
-        return datetime.datetime.fromtimestamp(self.creation_time, tz=pytz.utc)
+        return datetime.datetime.fromtimestamp(self.creation_time, tz=datetime.timezone.utc)
 
     @property
     def ended_at(self) -> Optional[datetime.datetime]:
         end_time = self.end_time
         if end_time is not None:
-            return datetime.datetime.fromtimestamp(end_time, tz=pytz.utc)
+            return datetime.datetime.fromtimestamp(end_time, tz=datetime.timezone.utc)
         else:
             return None
 
@@ -123,7 +122,7 @@ class Run(Container, Caller):
     def log_records(self) -> LogRecordSequence:
         return LogRecordSequence(self, name='__log_records', context={})
 
-    def track(self, value, name: str, step: Optional[int] = None, context: dict = Optional[None], **axis):
+    def track(self, value, name: str, step: Optional[int] = None, context: Optional[dict] = None, **axis):
         context = {} if context is None else context
         seq_type = self._get_sequence_type_from_value(value)
         sequence = self.sequences.typed_sequence(seq_type, name, context)
