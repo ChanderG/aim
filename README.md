@@ -9,7 +9,7 @@
         </td>
       </tr>
       <tr>
-        <td colspan="2"><p align="center"><a href="#-aim-40">⚡ ⚡ Aim 4.0 stable has been released! ⚡ ⚡ !!</a></p></td>
+        <td colspan="2"><p align="center">⚡ ⚡ Aim 4.0 stable has been released! ⚡ ⚡ !!</p></td>
       </tr>
     </tbody>
   </table>
@@ -128,7 +128,7 @@ The Logging applications are typically a combination of these components:
 Aim comes installed with a number of default logging apps:
 
 - Base App - a basic generic log exploration and the logging primitives
-- AI Experiment Tracking Apps - a collection of apps that log machine learning experiments for most of the ML frameworks.
+- AI Experiment Tracking App - log and explore your machine learning experiments. Includes integrations with the majority of leading ML frameworks.
 - AI Systems Tracing and Debugging Apps - a combination of variety of apps that log from langchain to llamaindex traces all in one place.
 
 Apart from running the logging apps, Aim comes with explorers and reports.
@@ -141,9 +141,9 @@ With the rise of AI Systems and the challenges it brings forward, logging apps a
 Our mission is to democratize developer tools for building AI.
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/13848158/226426018-f7c11c9b-78d9-4ee4-b292-df28b3e8eaa6.jpg" height="140" />
-  <img src="https://user-images.githubusercontent.com/13848158/226426005-f7e83923-0f92-44a4-88e4-1735a3d3e119.jpg" height="140" />
-  <img src="https://user-images.githubusercontent.com/13848158/226426015-4f1122d8-c96a-443f-8698-3db942b1972a.jpg" height="140" />
+  <img src="https://github.com/aimhubio/aim/assets/13848158/26422615-3b06-4085-a3b3-ed5e1731041d" height="140" />
+  <img src="https://github.com/aimhubio/aim/assets/13848158/22d63c83-4b4e-431a-85cb-ff38064f8b55" height="140" />
+  <img src="https://github.com/aimhubio/aim/assets/13848158/c36b0f67-3efe-49c4-ae01-695c987251c5" height="140" />
 </div>
 
 </br>
@@ -158,35 +158,7 @@ A general observability over anything logged with Aim.
 | High-level overview of the logs, the types logged and the respective sessions/ containers  |
 | Deep-dive into each type of the log |
 
-### AI Systems Tracing Apps
-
-<div align="left">
-  <table>
-    <tbody>
-      <tr>
-        <th>Log Inputs, Outputs and Actions of Executions 🤖</th>
-        <th>Visualize & Compare Executions Steps via UI 🔍</th>
-      </tr>
-      <tr>
-        <td>
-          <ul>
-            <li>Track all the prompts, generations of LLMs</li>
-            <li>Track all the inputs, outputs of tools</li>
-            <li>Capture chains metadata</li>
-            </ul>
-          </td>
-        <td>
-          <ul>
-            <li>Deep dive into single execution steps</li>
-            <li>Compare executions side-by-side</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-### Experiment Tracking Apps
+### Experiment Tracking App
 
 <div align="left">
   <table>
@@ -232,107 +204,75 @@ A general observability over anything logged with Aim.
   </table>
 </div>
 
+### AI Systems Tracing Apps
+
+<div align="left">
+  <table>
+    <tbody>
+      <tr>
+        <th>Log Inputs, Outputs and Actions of Executions 🤖</th>
+        <th>Visualize & Compare Executions Steps via UI 🔍</th>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>Track all the prompts, generations of LLMs</li>
+            <li>Track all the inputs, outputs of tools</li>
+            <li>Capture chains metadata</li>
+            </ul>
+          </td>
+        <td>
+          <ul>
+            <li>Deep dive into single execution steps</li>
+            <li>Compare executions side-by-side</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 # 🎬 Demos
 
 Check out live Aim demos NOW to see it in action.
 
-### Tracing LangChain-based chatbot executions
-
-Demo: [https://play-v4.aimstack.io/langchain-chatbot-ui/apps/langchain_debugger/traces.py](https://play-v4.aimstack.io/langchain-chatbot-ui/apps/langchain_debugger/traces.py)
-
-Code: https://github.com/aimhubio/awesome-aim-demos/tree/main/langchain-chatbot
-
-![image](https://github.com/aimhubio/aim/assets/13848158/a1de8850-1850-41e5-b106-f433fd5a3dab)
-
-### Tracing LlamaIndex query executions
-
-Demo: [https://play-v4.aimstack.io/llamaindex-retriever-ui/apps/llamaindex_observer/traces.py](https://play-v4.aimstack.io/llamaindex-retriever-ui/apps/llamaindex_observer/traces.py)
-
-Code: https://github.com/aimhubio/awesome-aim-demos/tree/main/llamaindex-retriever
-
-![image](https://github.com/aimhubio/aim/assets/13848158/344c1c3a-1835-4f33-a1d6-58fec8f51f49)
-
-### Tracking PyTorch-based CNN trainings
-
-Demo: [https://play-v4.aimstack.io/mnist-training-ui/apps/experiment_tracker/runs.py](https://play-v4.aimstack.io/mnist-training-ui/apps/experiment_tracker/runs.py)
-
-Code: https://github.com/aimhubio/awesome-aim-demos/tree/main/mnist-training
-
-![image](https://github.com/aimhubio/aim/assets/13848158/22d63c83-4b4e-431a-85cb-ff38064f8b55)
-
+<table>
+    <tr>
+        <td align="center">
+            <h3>Tracing LangChain-based chatbot executions</h3>
+            <a href="https://play-v4.aimstack.io/langchain-chatbot-ui/apps/langchain_debugger/traces.py">View Demo</a> &nbsp;|&nbsp; 
+            <a href="https://github.com/aimhubio/awesome-aim-demos/tree/main/langchain-chatbot">View Code</a><br><br>
+            <kbd><img src="https://github.com/aimhubio/aim/assets/13848158/26422615-3b06-4085-a3b3-ed5e1731041d" style="display: block; margin-left: auto; margin-right: auto;"></kbd>
+        </td>
+        <td align="center">
+            <h3>Tracing LlamaIndex query executions</h3>
+            <a href="https://play-v4.aimstack.io/llamaindex-retriever-ui/apps/llamaindex_observer/traces.py">View Demo</a> &nbsp;|&nbsp; 
+            <a href="https://github.com/aimhubio/awesome-aim-demos/tree/main/llamaindex-retriever">View Code</a><br><br>
+            <kbd><img src="https://github.com/aimhubio/aim/assets/13848158/75c859d0-8c20-4218-b418-d7e8cc8ba715" style="display: block; margin-left: auto; margin-right: auto;"></kbd>
+        </td>
+    </tr>
+    <tr><td colspan="2"></td></tr>
+    <tr>
+        <td colspan="2" align="center" width="50%">
+            <h3>Tracking PyTorch-based CNN trainings</h3>
+            <a href="https://play-v4.aimstack.io/mnist-training-ui/apps/experiment_tracker/runs.py">View Demo</a> &nbsp;|&nbsp; 
+            <a href="https://github.com/aimhubio/awesome-aim-demos/tree/main/mnist-training">View Code</a><br><br>
+            <img src="https://github.com/aimhubio/aim/assets/13848158/22d63c83-4b4e-431a-85cb-ff38064f8b55" style="display: block; margin-left: auto; margin-right: auto;" width="50%">
+        </td>
+    </tr>
+</table>
 
 # 🌍 Default logging apps
-Aim comes pre-installed with wide variety of apps. Here is the full list.
 
-## Base Apps
+Aim comes pre-installed with a wide variety of apps. Here is the full list:
 
-### base
-Base Aim app for general observability over anything logged with Aim.
-Includes base types to log common artifacts such as Images, Audio objects, Figures, Metrics.
-
-### docs
-Use the docs Aim app to access Aim docs.
-
-## AI Systems Tracing Apps
-
-### langchain_debugger
-Simple LangChain debugger that logs prompts and generations of LLMs, inputs and outputs of tools, as well as chains metadata.
-
-### llamaindex_observer
-A simple LlamaIndex debugger and observer, which logs metadata such as embeddings chunks, retrieval nodes, queries and responses.
-
-## Experiment Tracking Apps
-
-### experiment_tracker
-Base app for tacking and exploring ML experiments with Aim.
-
-### acme_tracker
-Package for tracking and exploring acme experiments.
-
-### catboost_tracker
-Package for tracking and exploring CatBoost experiments.
-
-### fastai_tracker
-Package for tracking and exploring fast.ai experiments.
-
-### hugging_face_tracker
-Package for tracking and exploring HuggingFace experiments.
-
-### keras_tracker
-Package for tracking and exploring Keras experiments.
-
-### keras_tuner_tracker
-Package for tracking and exploring KerasTuner experiments.
-
-### lightgbm_tracker
-Package for tracking and exploring LightGBM experiments.
-
-### mxnet_tracker
-Package for tracking and exploring MXNet experiments.
-
-### optuna_tracker
-Package for tracking and exploring Optuna experiments.
-
-### paddle_tracker
-Package for tracking and exploring PaddlePaddle experiments.
-
-### prophet_tracker
-Package for tracking and exploring Prophet ML experiments.
-
-### pytorch_ignite_tracker
-Package for tracking and exploring PyTorch Ignite experiments
-
-### pytorch_lightning_tracker
-Package for tracking and exploring PyTorch Lightning experiments.
-
-### sb3_tracker
-Package for tracking and exploring Stable-Baselines3 experiments.
-
-### tensorflow_tracker
-Package for tracking and exploring TensorFlow experiments.
-
-### xgboost_tracker
-Package for tracking and exploring XGBoost experiments.
+| App Name             | Description                                                                                         | Category            | Docs     | Source  |
+|----------------------|-----------------------------------------------------------------------------------------------------|----------------------|----------|---------|
+| base                 | Base Aim app for general observability over anything logged with Aim. Includes base types to log common artifacts, such as Image, Audio object, Figure, Metric. | Base | [docs](https://aimstack.readthedocs.io/en/latest/apps/base_app.html) | [source](https://github.com/aimhubio/aim/tree/main/pkgs/aimstack/base) |
+| docs                 | Use this Aim app to access Aim docs. | Docs | -        | [source](https://github.com/aimhubio/aim/tree/main/pkgs/aimstack/docs) |
+| langchain_debugger   | Debugger for LangChain that logs LLMs prompts and generations, tools inputs/outputs, and chains metadata. | AI Systems Tracing  | [docs](https://aimstack.readthedocs.io/en/latest/apps/langchain_debugger.html) | [source](https://github.com/aimhubio/aim/tree/main/pkgs/aimstack/langchain_debugger) |
+| llamaindex_observer  | Debugger and observer for LlamaIndex. Logs metadata like retrieval nodes, queries and responses, embeddings chunks, etc. | AI Systems Tracing  | [docs](https://aimstack.readthedocs.io/en/latest/apps/llamaindex_observer.html) | [source](https://github.com/aimhubio/aim/tree/main/pkgs/aimstack/llamaindex_observer) |
+| experiment_tracker   | App for tracking and exploring ML experiments. Integrations with various ML libraries, including Acme, CatBoost, fastai, Hugging Face Transformers, Keras, Keras Tuner, LightGBM, MXNet, Optuna, PaddlePaddle, PyTorch Ignite, SDB3, and XGBoost. | Experiment Tracking | [docs](https://aimstack.readthedocs.io/en/latest/apps/experiment_tracker.html) | [source](https://github.com/aimhubio/aim/tree/main/pkgs/aimstack/experiment_tracker) |
 
 # 🏁 Quick start
 

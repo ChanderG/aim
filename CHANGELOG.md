@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.0.3 Oct 4, 2023
+
+- Move ML framework loggers under experiment_tracker app (alberttorosyan)
+
+
 ## 4.0.2 Oct 3, 2023
 
 - Fix aim migrate command when list(float) with single value is tracked (alberttorosyan)
